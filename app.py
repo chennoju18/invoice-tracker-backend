@@ -72,6 +72,6 @@ def get_invoices():
         invoice['_id'] = str(invoice['_id'])  # Convert ObjectId to string
     return jsonify(invoices), 200
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+  #  app.run(debug=True)
 
