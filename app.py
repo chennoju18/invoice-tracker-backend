@@ -7,12 +7,12 @@ import os
 import re
 from pymongo import MongoClient
 from datetime import datetime
+
+app = Flask(__name__)
 @app.route('/')
 def home():
     return "✅ Invoice Tracker Backend is Running!"
 
-
-app = Flask(__name__)
 CORS(app)
 
 UPLOAD_FOLDER = 'uploads'
